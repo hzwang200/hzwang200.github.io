@@ -6,52 +6,68 @@ html
   padding: 0;}
 
 body
-{ font: normal 90% Arial, Helvetica, sans-serif;
-  color: #000;
+{ font: normal 12pt Calibri, Helvetica, sans-serif;
+  color: black;
   background: whitesmoke;}
 
 /* tell the browser to render HTML 5 elements as block */
 article, aside, figure, footer, header, hgroup, nav, section 
-{ display:block;}
+{ display: block;}
 
 p
 { padding: 0 0 10px 0;
-  line-height: 1.7em;
-  font-size: 16px;}
+  font-size: 14pt;
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
 img
 { border: 0;
   margin: 0;}
 
-h1, h2, h3, h4, h5, h6
-{ font: normal 175%, Arial, sans-serif;
-  color: #000;
-  margin: 0 0 10px 0;}
+h1
+{ display: block;
+  font: bold 24pt Calibri, Helvetica, sans-serif;
+  color: black; 
+  padding: 0 0 10px 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;}
 
 h2
-{ font: normal 165%, Arial, sans-serif;}
+{ font: normal 22pt Calibri, sans-serif;}
 
 h3
-{ font: normal 130%, Arial, sans-serif;}
+{ font: normal 18pt Calibri, sans-serif;
+  padding: 0 0 10px 0;}
 
-h4, h5, h6
+h4
 { margin: 0;
   padding: 0;
-  font: normal 150%, Arial, sans-serif;
+  font: normal 16pt Calibri, sans-serif;
   color: black;
   line-height: 1.5em;}
 
-h5, h6
-{ font: normal 95%, Arial, sans-serif;
-  color: #888;
+h5
+{ font: normal 14pt Calibri, sans-serif;
+  color: black;
   padding-bottom: 15px;}
+
+h6
+{
+  font:normal 13pt Calibri, sans-serif;
+  color: black;}
   
 span
 { color: #B1521A;
   text-shadow: none;}
 
 a, a:hover
-{ color: #000;
+{ color: black;
   background: transparent;
   font-weight: bold;
   outline: none;
@@ -61,10 +77,7 @@ a:hover
 { text-decoration: none;}
 
 ul
-{ margin: 2px 0 22px 30px;
-  line-height: 1.7em;
-  font-style: normal;
-  font-size: 100%;}
+{ margin: 2px 0 22px 30px;}
 
 ol
 { margin: 8px 0 22px 20px;}
@@ -77,31 +90,33 @@ ol li
   margin-right: auto;}
   
 header
-{ height: 130px;
+{ height: 150px;
   background: rgb(39, 49, 126);
   /*background: -moz-linear-gradient(white, rgb(138, 159, 177));
   background: -o-linear-gradient(white, rgb(138, 159, 177));
   background: -webkit-linear-gradient(white, rgb(138, 159, 177));*/}
  
 nav
-{ height: 50px;}  
+{ height: 50px; 
+  padding-top: 15px;}  
   
 #strapline
-{ width: 940px;
-  height: 70px;
+{ width: 1000px;
+  height: 80px;
   text-align: center;
   margin: 0 auto;} 
   
 #welcome_slogan
-{ width: 940px;
-  float: left;
-  height: 70px;
-  padding-top: 20px;  
+{ width: 1000px; 
+  float: none; 
+  height: 75px; 
+  padding-top: 25px; 
   margin: 0 auto;
+  font-family: Calibri;
   text-align: center;}    
 
-#welcome_slogan H3
-{ font: bold 300% Arial, sans-serif;
+#welcome_slogan h3
+{ font: bold 300% Calibri, sans-serif;
   color: whitesmoke;} 
 
 #menubar
@@ -122,9 +137,9 @@ ul#nav li
   display: inline;
   background: transparent;}
 
-ul#nav li a
-{ margin: auto;
-  font: bold 130% Arial, sans-serif;
+ul#nav li a, li.current a
+{ font-size: 18pt;
+  margin: auto;
   height: 24px;
   padding: 10px 13px 10px 13px;
   background: transparent; 
@@ -135,18 +150,10 @@ ul#nav li a
   color: whitesmoke;
   text-decoration: none;} 
   
-ul#nav li.current a
-{ color: whitesmoke;
-  background: rgb(39, 49, 126);
-  /*background: -moz-linear-gradient(white, seashell);
-  background: -o-linear-gradient(white, seashell);
-  background: -webkit-linear-gradient(white, seashell);*/
-  text-shadow: none;}
-  
 ul#nav li:hover a
 {
   color: whitesmoke;
-  background: rgb(37, 18, 199);
+  background: rgb(39, 49, 126);
   /*background: -moz-linear-gradient(rgb(37, 18, 199), rgb(26, 18, 153));
   background: -o-linear-gradient(rgb(37, 18, 199), rgb(26, 18, 153));
   background: -webkit-linear-gradient(rgb(37, 18, 199), rgb(26, 18, 153));*/
@@ -199,7 +206,7 @@ ul img {
  
 #slideshow-caption p {
   padding: 0;
-  font: normal 130% arial, sans-serif;
+  font: normal 130% Calibri, sans-serif;
   color: #FFF;
   text-shadow: none;}  
 
@@ -218,12 +225,12 @@ ul img {
   margin-bottom: 10px;}
 
 .sidebar_item
-{ font: normal 100% Arial, Helvetica, sans-serif;
+{ font: normal 100% Calibri, Helvetica, sans-serif;
   width: 240px;}
 
 .sidebar h2
 { padding: 5px 0 0 0;
-  font: normal 140% 'News Cycle', Arial, sans-serif;
+  font: normal 140% 'News Cycle', Calibri, sans-serif;
   height: 30px;}  
 
 #content
@@ -262,8 +269,9 @@ ul img {
 }
   
 footer
-{ height: 70px;
-  padding-top: 25px;
+{ font-size: 16px;
+  height: 80px;
+  padding-top: 20px;
   padding-bottom: 20px;  
   font-weight: bold;
   text-align: center;
@@ -276,7 +284,7 @@ footer
 footer a, footer a:hover
 { color: whitesmoke;
   text-decoration: none;
-  padding-bottom: 10px;}
+  padding-bottom: 5px;}
 
 footer a:hover
 { text-decoration: underline;}
@@ -294,15 +302,15 @@ footer a:hover
   text-shadow: none;}
  
  .button_small
-{ font: normal 110% Arial, Helvetica, sans-serif;
+{ font: normal Calibri, Helvetica, sans-serif;
   float: left;
   height: 15px;
-  padding: 5px 10px 7px 8px;
-  background: rgb(37, 18, 199);
-  background: -moz-linear-gradient(rgb(37, 18, 199), rgb(26, 18, 153));
+  padding: 2px 10px 8px 10px;
+  background: rgb(39, 49, 126);
+  /*background: -moz-linear-gradient(rgb(37, 18, 199), rgb(26, 18, 153));
   background: -o-linear-gradient(rgb(37, 18, 199), rgb(26, 18, 153));
   background: -webkit-linear-gradient(rgb(37, 18, 199), rgb(26, 18, 153));
-  /*border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border: 15px 15px 15px 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
@@ -311,7 +319,7 @@ footer a:hover
   
 .button_small a
 { color: whitesmoke;
-  padding-left: 5px;
+  padding: 0 0 5px 0;
   text-shadow: none;}
 
 .form_settings
@@ -330,7 +338,7 @@ footer a:hover
 .form_settings input, .form_settings textarea
 { padding: 2px; 
   width: 299px; 
-  font: 100% arial; 
+  font: 100% Calibri; 
   border: 1px solid #E5E5DB; 
   background: #FFF; 
   color: #47433F;}
@@ -338,14 +346,14 @@ footer a:hover
 .form_settings input[type="checkbox"]
 { padding: 2px 0; 
   width: 15px; 
-  font: 100% arial; 
+  font: 100% Calibri; 
   border: 0; 
   background: #FFF; 
   color: #47433F;
   margin: 28px 0;}
 
 .form_settings .submit
-{ font: 100% arial; 
+{ font: 100% Calibri; 
   border: 1px solid; 
   width: 99px; 
   margin: 0 0 0 206px; 
