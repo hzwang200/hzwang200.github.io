@@ -11,8 +11,7 @@ html
 body
 { font: normal 12pt Calibri, Helvetica, sans-serif;
   color: black;
-  background: whitesmoke;
-  margin-bottom: 120px;}
+  background: whitesmoke;}
 
 /* tell the browser to render HTML 5 elements as block */
 article, aside, figure, footer, header, hgroup, nav, section 
@@ -31,7 +30,7 @@ p
 
 img
 { border: 0;
-  margin: 0;}
+  margin: auto; }
 
 h1
 { display: block;
@@ -54,8 +53,8 @@ h2
   clear: both; }
 
 h3
-{ font: normal 18pt Calibri, sans-serif;
-  padding: 0 0 10px 0;}
+{ font: bold 18pt Calibri, sans-serif;
+  padding: 10px 0;}
 
 h4
 { margin: 0;
@@ -89,7 +88,8 @@ a:hover
 { text-decoration: none;}
 
 ul
-{ margin: 2px 0 22px 30px;}
+{ margin: 2px 0 22px 30px; 
+  line-height: 1.7em;}
 
 ol
 { margin: 8px 0 22px 20px;}
@@ -173,52 +173,52 @@ ul#nav li:hover a
 }
 
 #slideshow_container
-{ height: 300px;
+{ height: 270px;
   background: whitesmoke;
   padding-top: 20px;}
   
 .slideshow
 { width: 1000px;
-  height: 280px;
+  height: 250px;
   margin: 0 auto;}  
   
 /* styling for the slideshow on the homepage */
-ul.slideshow {
-  list-style: none;
+ul.slideshow 
+{ list-style: none;
   width: 1000px;
-  height: 280px;
+  height: 250px;
   overflow: hidden;
   position: relative;}
   
-ul.slideshow li {
-  position: absolute;
+ul.slideshow li 
+{ position: absolute;
   margin: 0;
   padding: 0;
   left: 0;
   right: 0;}
  
-ul.slideshow li.show {
-  z-index: 500;}
+ul.slideshow li.show 
+{ z-index: 500;}
  
-ul img {
-  border: none;}
+ul img 
+{ border: none;}
  
-#slideshow-caption {
-  width: 1000px;
-  height: 38px;
+#slideshow-caption 
+{ width: 1000px;
+  height: 45px;
   position: absolute;
   bottom: 0;
   left: 0; 
   z-index: 500;}
  
-#slideshow-caption .slideshow-caption-container {
-  padding: 10px 25px 10px 25px; 
+#slideshow-caption .slideshow-caption-container 
+{ padding: 10px 25px; 
   background: transparent url(../images/transparent.png) repeat;  
   z-index: 1000;}
  
 #slideshow-caption p {
   padding: 0;
-  font: normal 130% Calibri, sans-serif;
+  font: normal Calibri, sans-serif;
   color: #FFF;
   text-shadow: none;}  
 
@@ -255,35 +255,83 @@ ul img {
   margin-top: 20px;
   margin-bottom: 20px;
   float: left;}
-  
-.content_container
-{ width: 480px;
-  margin: 10px 10px 10px 10px;
-  float: left;}
 
-.content_container2
-{ width: 275px;
-  margin: 20px 10px 0 0;
-  float: left;
-  clear: both; }
-
-.content_container3
+/* for research abstract on the home page */
+.content_container_home
 {
-  width: 600px;
-  margin: 20px 10px 0 0;
+  width: 480px;
+  margin: 10px;
   float: left;
 }
 
-.content_container4
-{
+/* for figures and research summary on the research page */
+.content_container
+{ width: 460px;
+  margin: 20px;
+  height: 320px;
+  float: left;}
+
+.content_container_2
+{ width: 460px;
+  margin: 20px;
+  height: 320px;
+  float: right;}
+
+.content_containerX
+{ margin: 20px 20px 20px 500px; 
+  text-align: justify;
+  font-size: 14pt;
+  height: 320px;}
+
+.content_containerX_2
+{ margin: 20px 500px 20px 20px; 
+  text-align: justify;
+  font-size: 14pt;
+  height: 320px;}
+
+/* for the logo on the people page*/
+.content_container2
+{ display: flex;
+  width: 300px;
+  padding: 10px;
+  height: 150px;
+  float: left; }
+
+/* for the explanation on the people page*/
+.content_container3
+{ display: block;
   width: 1000px;
-  margin: 20px 10px 0 0;
-  float: left;
+  height: 150px;
+  padding: 10px;
+  font-size: 14pt; 
+  line-height: 150px;}
+
+.valign
+{ display: inline-block;
+  vertical-align: middle;
+  line-height: 24px;
+}
+
+/* for the honors and awards on the people page*/
+.content_container4
+{ width: 940px;
+  padding: 10px 30px;
+  font-size: 14pt;
+  line-height: 24px;
+}
+
+/* for about me on the people page */
+.content_container5
+{ width: 940px;
+  padding: 10px 30px;
+  text-align: justify;
+  font-size: 14pt;
+  text-indent: 2em;
+  line-height: 24px;
 }
   
 footer
-{ position: fixed;
-  position: fixed;
+{ position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
