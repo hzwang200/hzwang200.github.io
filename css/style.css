@@ -488,7 +488,7 @@ section {
 .content_container5 { 
   width: 1080px;
   text-align: justify;
-  font-size: 14pt;
+  font-size: 16pt;
   text-indent: 2em;
   line-height: 24px;
 }
@@ -602,22 +602,22 @@ sub {
 }
 
 .paper-box .paper-number {
-	font-size: 20px;
+	font-size: 24px;
 	text-align: left;
 	float: left;
 	width: 6%;
-	line-height: 15pt;
+	line-height: 20pt;
 	font-weight: 700;
 	vertical-align: baseline;
   color: rgb(62, 62, 62);
 }
 
 .paper-box .paper-title {
-	font-size: 20px;
+	font-size: 24px;
 	text-align: left;
 	float: left;
 	width: 94%;
-	line-height: 15pt;
+	line-height: 20pt;
 	font-weight: 700;
 	vertical-align: baseline;
   margin-bottom: 10px;
@@ -645,9 +645,9 @@ sub {
 }
 
 .paper-authors {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight:400;
-  padding: 10px 4.05em; 
+  padding: 10px 3.7em; 
   text-align: justify;
   color: #000;
 }
