@@ -11,7 +11,7 @@ html {
 }
 
 body { 
-  font: normal 16px Calibri, Helvetica, sans-serif;
+  font: normal 16px 'Lato', sans-serif;
   color: black;
   background: whitesmoke;
 }
@@ -36,7 +36,7 @@ img {
 
 h1 { 
   display: block;
-  font: bold 2em Calibri, Helvetica, sans-serif;
+  font: bold 2em 'Lato', sans-serif;
   color: black; 
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
@@ -46,7 +46,7 @@ h1 {
 
 h2 { 
   display: block;
-  font: bold 1.5em Calibri, sans-serif;
+  font: bold 1.5em 'Lato', sans-serif;
   color: black;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
@@ -56,28 +56,28 @@ h2 {
 
 h3 { 
   display: block;
-  font: bold 1.17em Calibri, sans-serif;
+  font: bold 1.17em 'Lato', sans-serif;
   color: black;
   margin: 1em 0; 
 }
 
 h4 { 
   display: block;
-  font: bold 1em Calibri, sans-serif;
+  font: bold 1em 'Lato', sans-serif;
   color: black;
   margin: 1.33em 0;
 }
 
 h5 { 
   display: block;
-  font: bold .83em Calibri, sans-serif;
+  font: bold .83em 'Lato', sans-serif;
   color: black;
   margin: 1.67em 0;
 }
 
 h6 {
   display: block;
-  font: bold .67em Calibri, sans-serif;
+  font: bold .67em 'Lato', sans-serif;
   color: black;
   margin: 2.33em 0;
 }
@@ -144,7 +144,7 @@ nav {
   height: 120px; 
   padding-top: 30px; 
   margin: 0 auto;
-  font-family: Calibri;
+  font-family: 'Lato';
 } 
 
 #menubar { 
@@ -293,13 +293,13 @@ ul img {
 #slideshow-caption p {
   padding: 0;
   margin: 0;
-  font: normal Calibri, sans-serif;
+  font: normal 'Lato', sans-serif;
   color: #FFF;
   text-shadow: none;
 }  
 
 section {
-  background-color: rgb(39, 49, 126);
+  background-color: rgb(4, 30, 66);
 }
 
 .subbanner {
@@ -330,13 +330,13 @@ section {
 }
 
 .sidebar_item { 
-  font: normal 100% Calibri, Helvetica, sans-serif;
+  font: normal 100% 'Lato', 'Lato', sans-serif;
   width: 240px;
 }
 
 .sidebar h2 { 
   padding: 5px 0 0 0;
-  font: normal 140% 'News Cycle', Calibri, sans-serif;
+  font: normal 140% 'News Cycle', 'Lato', sans-serif;
   height: 30px;
 }  
 
@@ -360,7 +360,8 @@ section {
 
 .content_item_home p {
   color: black;
-  font-size: 21.6px; 
+  font-size: 20px; 
+  /* line-height: 30px; */
 }
 
 .content_item a { 
@@ -478,19 +479,19 @@ section {
 
 /* for the honors and awards on the people page*/
 .content_container4 { 
-  width: 940px;
+  width: 1080px;
   padding: 10px 30px;
-  font-size: 14pt;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /* for about me on the people page */
 .content_container5 { 
   width: 1080px;
   text-align: justify;
-  font-size: 16pt;
+  font-size: 20px;
   text-indent: 2em;
-  line-height: 24px;
+  /* line-height: 30px; */
 }
   
 footer { 
@@ -502,7 +503,7 @@ footer {
   padding-bottom: 20px;
   text-align: center;
   color: whitesmoke;
-  background: rgb(39, 49, 126);
+  background: rgb(4, 30, 66);
 }
 
 footer a, footer a:hover { 
@@ -521,7 +522,7 @@ footer a:hover {
 }
 
 .button_small { 
-  font: normal Calibri, Helvetica, sans-serif;
+  font: normal 'Lato', 'Lato', sans-serif;
   float: left;
   height: 15px;
   padding: 2px 10px 8px 10px;
